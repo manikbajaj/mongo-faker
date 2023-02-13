@@ -3,7 +3,10 @@ module.exports = {
   transform : {
     '^.+\\.(t|j)s$' : 'ts-jest' ,
   } ,
-  testRegex : '(/__tests__/.*|(\\.|/)(test|spec))\\.(t|j)s$' ,
+  testMatch: [
+    '**/__tests__/**/*.+(ts|tsx|js)',
+    '**/?(*.)+(spec|test).+(ts|tsx|js)',
+  ],
   moduleFileExtensions : [ 'ts' , 'js' , 'json' , 'node' ] ,
   rootDir : 'src' ,
   collectCoverage : true ,
@@ -12,7 +15,8 @@ module.exports = {
     '!**/node_modules/**' ,
     '!**/vendor/**' ,
     '!**/lib/**' ,
-    '!**/coverage/**'
+    '!**/coverage/**',
+    '!**/tools/**'
   ] ,
   coverageDirectory : './coverage' ,
   coverageThreshold : {
