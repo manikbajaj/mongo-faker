@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
+    "build:local": "npm link mongoose-faker",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
     "test": "jest --config jest.config.js",
@@ -50,5 +51,9 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "mongoose": "^6.9.1"
   }
 }
