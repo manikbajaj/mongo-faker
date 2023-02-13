@@ -326,3 +326,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Ignore Lock Files
+yarn.lock
+package-lock.json
