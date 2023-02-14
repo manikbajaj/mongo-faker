@@ -8,7 +8,7 @@ module.exports = {
     '**/?(*.)+(spec|test).+(ts|tsx|js)',
   ],
   moduleFileExtensions : [ 'ts' , 'js' , 'json' , 'node' ] ,
-  rootDir : 'src' ,
+  rootDir : './src' ,
   collectCoverage : true ,
   collectCoverageFrom : [
     '**/*.{js,ts}' ,
@@ -18,7 +18,7 @@ module.exports = {
     '!**/coverage/**',
     '!**/tools/**'
   ] ,
-  coverageDirectory : './coverage' ,
+  coverageDirectory : '../coverage' ,
   coverageThreshold : {
     global : {
       lines : 95,
